@@ -242,7 +242,7 @@ section {
 
 }
 
-.experience-section-img>div>.heading {
+.experience-section-img>div>.experience-img-heading {
 
     font-size: 4rem;
     font-weight: 700;
@@ -347,7 +347,11 @@ justify-content: center;
 }
 
 
-
+footer{
+    text-align: center;
+    background: #FFF4E7;
+    padding: 2rem 5rem;
+}
 
 
 /* mobile device */
@@ -388,7 +392,6 @@ justify-content: center;
     section {
         flex-direction: column;
         text-align: center;
-        border: 1px solid red;
 
     }
 
