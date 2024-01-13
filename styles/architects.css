@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 .btn {
     width: 12rem;
     height: 4rem;
@@ -72,8 +76,6 @@ header>nav>ul>li>a {
     text-align: center;
     align-items: center;
     gap: 2rem;
-
-
 }
 
 .header-content-container {
@@ -112,19 +114,23 @@ main {
     padding: 1rem 5rem;
 }
 
+section {
+    margin: 10rem 0rem;
+}
+
 .feature-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 5rem;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .feature-section-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
-    }
+}
+
 /* .feature-section-img > img {
     width: 100%;
 } */
@@ -134,6 +140,7 @@ main {
     flex-direction: column;
     align-items: start;
     gap: 1rem;
+    width: 25rem;
 }
 
 .feature-section-content>h1 {
@@ -147,6 +154,96 @@ main {
     font-size: 1rem;
     font-weight: 400;
 }
+
+.experience-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.experience-section-content {
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* border: 1px solid red; */
+
+}
+
+.experience-heading {
+    color: #131313;
+    font-size: 3rem;
+    font-weight: 700;
+    border-left: 5px solid #FF900E;
+    padding-left: 0.5rem;
+}
+
+.experience-description {
+    color: var(--Dark-03, #727272);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.experience-boxs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.experience-boxs>div {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem ;
+
+}
+
+.experience-boxs>div>h3 {
+    color: #131313;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.experience-boxs>div>p {
+    color: #727272;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+    /* 162.5% */
+}
+
+
+.experience-section-img > img{
+    padding-left: 3rem;
+}
+
+.experience-section-img>div {
+    background: #FF900E;
+    text-align: center;
+    width: 20rem;
+    padding: 1.5rem;
+    color: #FFF;
+    border-radius: 0.8rem;
+    position: relative;
+    bottom: 5rem;
+  
+}
+
+.experience-section-img>div> .heading {
+
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.experience-section-img>div > .small-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.9rem;
+}
+
 
 
 /* mobile device */
@@ -169,34 +266,56 @@ main {
         gap: 1rem;
         padding: 0.5rem;
     }
+
     .header-img-container {
         padding: 0.5rem;
-       
+
     }
 
     .header-content-container>h1 {
         font-size: 2rem;
-        
-    }
-    main{
-        padding: 1rem 1rem;
-    }
-    section{
-        flex-direction: column;
-        text-align: center;
 
     }
-    .feature-section{
+
+    main {
+        padding: 1rem 1rem;
+    }
+
+    section {
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid red;
+
+    }
+
+    .feature-section {
         align-items: start;
-       
+
     }
+
     .feature-section-img {
-        grid-template-columns: repeat(1, 1fr);
-        
+        grid-template-columns: repeat(2, 1fr);
+
     }
-    .feature-section-content{
+
+    .feature-section-content {
+        width: 100%;
         align-items: center;
+        padding: 0.5rem;
     }
+    .feature-section-content>h1{
+        font-size: 2.5rem;
+    }
+    .feature-section-content>p{
+      
+        font-size: 1rem;    
+    }
+
+
+ .experience-section-content{
+    width: 100%;
+ }
+  
 }
 
 /* tablet device */
@@ -205,6 +324,7 @@ main {
         gap: 1rem;
         padding: 1rem 1.5rem;
     }
+
     .nav-header {
         font-size: 2rem;
     }
@@ -221,34 +341,44 @@ main {
     .header-content-container {
         gap: 1rem;
         padding: 0.5rem;
+
     }
+
     .header-img-container {
         padding: 0.5rem;
-       
+
     }
 
     .header-content-container>h1 {
         font-size: 2rem;
-        
+
     }
-    main{
+
+    main {
         padding: 1rem 1rem;
     }
+
     /* section{
         flex-direction: column;
         text-align: start;
         align-items: start;
     } */
-    .feature-section{
-     flex-direction: column;
-     align-items: start;
-     justify-content: start;
+    .feature-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
     }
+
     .feature-section-img {
         grid-template-columns: repeat(2, 1fr);
-      
+
     }
-    .feature-section-content{
-        align-items: start;
+
+    .feature-section-content {
+        align-items: center;
+        width: 100%;
+    }
+    .experience-section{
+        flex-direction: column;
     }
 }
